@@ -1,0 +1,53 @@
+Ans 1)
+  In Java, mutable strings are those that can be changed after they are created. Unlike the String class (which is immutable), 
+  the StringBuilder and StringBuffer classes allow modification of the content of the string without creating new objects each time a change is made.
+
+  Eg
+  public class MutableStringExample {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.append(" World");
+        System.out.println(sb);  
+        sb.replace(6, 11, "Java");
+        System.out.println(sb);  
+        sb.delete(5, 10);
+        System.out.println(sb);  
+    }
+}
+Ans 2)
+public class ReverseString {
+    public static void main(String[] args) {
+        String str = "PWSKILLS";
+        String reversed = new StringBuilder(str).reverse().toString();
+        System.out.println("Reversed String: " + reversed);
+    }
+}
+
+Ans 3)
+public class ReverseSentence {
+    public static void main(String[] args) {
+        String sentence = "Think Twice";
+        String[] words = sentence.split(" ");
+        StringBuilder reversedSentence = new StringBuilder();
+
+        for (String word : words) {
+            StringBuilder reversedWord = new StringBuilder(word).reverse();
+            reversedSentence.append(reversedWord).append(" ");
+        }
+
+        System.out.println("Reversed Sentence: " + reversedSentence.toString().trim());
+    }
+}
+
+Ans 4)
+import java.util.Arrays;
+
+public class SortString {
+    public static void main(String[] args) {
+        String str = "PWSKILLS";
+        char[] charArray = str.toCharArray();
+        Arrays.sort(charArray);
+        String sortedString = new String(charArray);
+        System.out.println("Sorted String: " + sortedString);
+    }
+}
