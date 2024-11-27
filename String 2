@@ -1,0 +1,73 @@
+Ans 1) 
+import java.util.Scanner;
+public class StringInput {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String userInput = scanner.nextLine();
+        System.out.println("You entered: " + userInput);
+        scanner.close();
+    }
+}
+Ans 2)
+In Java, you can concatenate two strings using either the + operator or the concat() method of the String class.
+public class StringConcatenation {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = "World";
+        String result1 = str1 + " " + str2;
+        System.out.println("Using + operator: " + result1);
+        String result2 = str1.concat(" ").concat(str2);
+        System.out.println("Using concat() method: " + result2);
+    }
+}
+Ans 3)
+public class StringLengthExample {
+    public static void main(String[] args) {
+        String str = "Hello, Java!";
+        int length = str.length();
+        System.out.println("The length of the string is: " + length);
+    }
+}
+Ans 4)
+we compare two string in java by == 
+
+public class StringComparison {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = "hello";
+
+        System.out.println("Using equals: " + str1.equals(str2));
+        System.out.println("Using equalsIgnoreCase: " + str1.equalsIgnoreCase(str2));
+        System.out.println("Using compareTo: " + str1.compareTo(str2));
+        System.out.println("Using ==: " + (str1 == str2));
+    }
+}
+
+Ans 5)
+public class StringLength {
+    public static void main(String[] args) {
+        String str = "refrigerator";
+        int length = str.length();
+        System.out.println("The length of the string is: " + length);
+    }
+}
+
+Ans 6)
+public class CheckLetter {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean isPresent = word.contains("e");
+        System.out.println("Is 'e' present in the word 'Umbrella'? " + isPresent);
+    }
+}
+
+Ans 7)
+public class RemoveConsonants {
+    public static void main(String[] args) {
+        String str = "Hello, have a good day";
+        str = str.replaceAll("[^aeiouAEIOU\\s]", "");
+        System.out.println("String after removing consonants: " + str);
+    }
+}
+
