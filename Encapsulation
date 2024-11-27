@@ -1,0 +1,34 @@
+Ans 1)
+Binding of data and corresponding method into a single unit is called Encapsulation.
+If any Java class follows data hiding and abstraction then such class is reffred as encapsulated class.
+Eg: Data hiding+data Abstraction
+Ans 2)
+Feature of encapsulation aRE:
+  I)DATA Hiding
+  ii)Access Control
+  iii)Modularity
+  iv)Flexibility
+  v)Validation
+
+Ans 3)
+Features of encapsulation are :
+  i) Getters: It is used to get the value from the instance variable of the class
+  ii) setters: It is used to set the value to the instance variable of the class.
+
+Ans 4)
+This keyword in Java refers to the current object, which means the instance of the class being referenced. 
+It serves several important purposes in object-oriented programming, particularly in Java.
+
+Ans 5)
+Advantages:
+To the outside world the data should not be exposed directly
+Our internal data should not go to the outside world directly that is outside people should not access our internal data
+BY using private modifiers we can implement data hiding.
+
+Ans 6)
+In Java, encapsulation is achieved by hiding an object's internal state and providing access to it via getter and setter methods. 
+This helps in protecting the object’s data from unauthorized access and modification. Encapsulation is implemented using the following steps:
+
+Declare the class fields (variables) as private: This ensures that they cannot be accessed directly from outside the class.
+Provide public getter and setter methods: These methods allow controlled access to the private fields. 
+The getter method is used to retrieve the value of the field, and the setter method is used to modify the value of the field.
