@@ -1,0 +1,13 @@
+Ans 1) Collection of character which enclosed within double quotes is called string .
+      eg : "adarsh:"
+Ans 2) there are 2 types of string in java they are:
+        i) Immutable string
+        ii) Mutable string
+Ans 3) we can create by 2 ways string object
+        they are: i) String buffer
+                  ii) string builder
+Ans 4) The String Constant Pool (also known as the String Pool) is a special area in Java's memory where String literals are stored. 
+        It is part of the heap memory and is used to optimize the performance and memory usage of strings in Java.
+ANs 5) Immutable string is not changeable like string is immutable
+      mUtable string is changeable like string buffer string builder.
+Ans 6) The String Constant Pool is located in the heap memory of the Java Virtual Machine (JVM).
