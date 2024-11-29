@@ -1,0 +1,57 @@
+Ans 1)
+Multithreading is the ability of a CPU to execute multiple threads concurrently, allowing a single process to be divided into smaller, 
+independent tasks that can run simultaneously. It is important because it helps in improving the efficiency of applications by enabling parallelism, making better use of CPU resources, 
+and enhancing the responsiveness of applications, especially in environments that require a lot of I/O operations or real-time data processing.
+
+Ans 2)
+Benefits of using Multithreading:
+
+Improved performance: Multithreading can improve the performance of applications by utilizing multiple CPU cores.
+Better resource utilization: It makes better use of CPU and memory resources.
+Enhanced responsiveness: Multithreading ensures the application remains responsive even when performing multiple tasks.
+Concurrency: Allows multiple operations to be performed concurrently, improving the overall throughput.
+Simpler structure for complex programs: It can simplify the structure of a program that performs tasks such as network communication, file I/O, and user interfaces.
+
+Ans 3)
+Thread in Java: A thread in Java is a lightweight process, which is the smallest unit of execution. 
+It represents an independent path of execution in a program. 
+Threads in Java are managed by the Java Virtual Machine (JVM), and each thread runs its own code independently, allowing multiple operations to be performed simultaneously within a program.
+
+Ans 4)
+Two ways of implementing a thread in Java:
+
+By extending the Thread class: You create a subclass of Thread and override the run() method. After that, you create an instance of the subclass and call its start() method to begin execution.
+java
+eg:
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread is running");
+    }
+}
+
+
+By implementing the Runnable interface: You create a class that implements the Runnable interface and override the run() method. Then, you pass an instance of this class to a Thread object and start the thread.
+java
+eg:
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Runnable thread is running");
+    }
+}
+
+Ans 5) Difference between thread and process are: 
+Thread: A thread is a smaller unit of a process that can execute independently. 
+Multiple threads within a process share the same memory space and resources. Threads are lightweight compared to processes.
+
+Process: A process is an independent program running in its own memory space.
+Processes do not share memory and resources directly, and context switching between processes is more expensive than between threads.
+
+Ans 6)
+Creating daemon threads in Java: A daemon thread in Java is a thread that runs in the background to perform tasks such as garbage collection or monitoring.
+To create a daemon thread, you can call the setDaemon(true) method on a Thread object before starting the thread.
+
+Ans 7)
+wait() and sleep() methods:
+
+wait(): The wait() method is used to make the current thread release the lock and go into the waiting state until it is notified by another thread (via notify() or notifyAll()). This is primarily used in synchronized blocks or methods for inter-thread communication.
+sleep(): The sleep() method pauses the execution of the current thread for a specified amount of time (in milliseconds or nanoseconds) without releasing the lock. It is generally used to simulate delays or time intervals between operations.
