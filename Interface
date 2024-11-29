@@ -1,0 +1,49 @@
+Ans 1)
+An interface in Java is a reference type, similar to a class, but it can contain only constants, method signatures, default methods, static methods, and nested types.
+It is a way to achieve abstraction and multiple inheritance in Java.
+
+Ans 2)
+public: All methods in an interface are implicitly public, so it's not necessary to declare them as such.
+default: Allows interfaces to provide method implementations, reducing the need for implementing classes to provide them.
+static: Defines methods that are associated with the interface, not an instance of the implementing class.
+abstract: Implied by default; no need to explicitly declare methods as abstract (unless you want to).
+private: Introduced in Java 9 for helper methods in default methods.
+Example:
+interface Animal {
+    // Implicitly public
+    void sound();
+}
+
+class Dog implements Animal {
+    @Override
+    public void sound() {
+        System.out.println("Woof!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        dog.sound();  // Output: Woof!
+    }
+}
+
+Ans 3)
+Abstraction: Interfaces provide a way to define method signatures without implementing them.
+Multiple Inheritance: Classes can implement multiple interfaces, enabling multiple inheritance.
+Loose Coupling: Interfaces reduce dependency between classes and allow easier code maintenance.
+Polymorphism: Interfaces enable different implementations to be treated uniformly.
+Decoupling: Interface-based design helps separate specifications from implementations.
+Functional Programming: Functional interfaces make Java compatible with lambda expressions and functional programming.
+Common Behavior: Interfaces define a contract for classes with diverse implementations.
+
+Ans 4)
+Use an abstract class:
+When you have a base class with some common implementation.
+When you want to share code across multiple related classes.
+When you want to enforce a certain behavior across classes but allow subclasses to modify some aspects.
+Use an interface:
+When you want to define a contract that multiple classes can implement, regardless of their class hierarchy.
+When you need to allow multiple inheritance.
+When you want to specify capabilities (e.g., Runnable, Serializable) that can be shared across unrelated classes.
+
