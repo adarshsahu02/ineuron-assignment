@@ -1,0 +1,63 @@
+Ans 1)
+A Map is an interface in Java that represents a collection of key-value pairs, where each key is unique, and each key maps to exactly one value.
+Common operations include adding, removing, and retrieving elements by their keys.
+
+Ans 2)
+HashMap - Provides unsorted and unordered mapping. Allows null as a key or value.
+TreeMap - Provides a sorted mapping based on the natural order of keys or a custom comparator.
+LinkedHashMap - Maintains the insertion order of elements.
+ConcurrentHashMap - Designed for concurrent access by multiple threads.
+WeakHashMap - Uses weak references for keys, which allows garbage collection when keys are no longer in use.
+
+Ans 4)
+Use the containsKey(Object key) method. It returns true if the key exists in the map and false otherwise.
+Example:
+
+Map<String, String> map = new HashMap<>();
+map.put("key1", "value1");
+boolean exists = map.containsKey("key1");
+
+Ans 5)
+Generics enable classes, interfaces, and methods to operate on types specified by the programmer at runtime.
+They provide type safety by ensuring that only specific types of data can be used, thus reducing runtime errors.
+
+Ans 6)
+Type Safety - Catches type mismatches at compile time.
+Code Reusability - Allows the same code to work with different data types.
+Avoids Type Casting - Eliminates the need for explicit casting.
+Enhanced Readability - Makes the code easier to understand by specifying the type.
+
+Ans 7)
+A generic class is a class with type parameters. This allows the class to work with different data types without writing additional code.
+eg:
+public class GenericClass<T> {
+    private T data;
+    public T getData() { return data; }
+    public void setData(T data) { this.data = data; }
+}
+
+Ans 8)
+A type parameter specifies a placeholder for a type used in a generic class, method, or interface. It is represented by symbols like T, E, K, V, etc.
+eg:
+class GenericClass<T> { /* T is the type parameter */ }
+
+Ans 9)
+A generic method is a method that defines its own type parameters. These parameters are specified between the method's access modifier and return type
+eg:
+public <T> void printArray(T[] array) {
+    for (T element : array) {
+        System.out.println(element);
+    }
+}
+
+Ans 10)
+ArrayList (Raw Type):
+
+An ArrayList without a specified type parameter.
+Can store any type of object but lacks type safety.
+May cause runtime errors due to improper type casting.
+ArrayList<T> (Generic):
+
+A type-safe ArrayList that works with a specific data type specified by T.
+Prevents runtime errors related to type casting.
+Example: ArrayList<String> ensures that only String objects can be added.
