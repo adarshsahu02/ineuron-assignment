@@ -1,0 +1,27 @@
+Ans 1) 
+The Collection framework in Java provides a set of classes and interfaces to store and manipulate groups of objects. It is part of the java.util package and includes:
+Interfaces like List, Set, Queue, Deque, and Map.
+
+Ans 2)
+ArrayList uses a dynamic array; it is faster for random access but slower for insertion and deletion in the middle.
+LinkedList uses a doubly linked list; it is slower for random access but faster for insertion and deletion.
+
+Ans 3)
+Iterator allows only forward traversal and works for all collections.
+ListIterator allows both forward and backward traversal but works only for lists.
+
+Ans 4)
+Iterator supports element removal and is modern, used in newer collections.
+Enumeration does not support element removal and is used in legacy collections
+
+Ans 5)
+List allows duplicates and maintains the order of elements.
+Set does not allow duplicates and does not guarantee order.
+
+Ans 6)
+HashSet is faster and does not maintain order.
+TreeSet is slower but keeps elements in sorted order.
+
+AN s7)
+Array is fixed in size and can store primitives.
+ArrayList is resizable and stores only objects.
